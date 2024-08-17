@@ -7,10 +7,10 @@ dependencies {
         mavenLocal()
         maven {
             credentials {
-                username "$mavenUser"
-                password "$mavenPassword"
+                username "$broadcomUser"
+                password "$broadcomPassword"
             }
-            url "https://commercial-repo.pivotal.io/data3/gemfire-release-repo/gemfire"
+            url "https://packages.broadcom.com/artifactory/gemfire"
         }
     }
     implementation  "com.vmware.gemfire:gemfire-core:10.1.0"
